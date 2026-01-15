@@ -3,8 +3,8 @@ const config = {
   "start_url": "https://jrdn-vm-engine.pages.dev",
   "timeout": {
     "main": 10000,
-    "afk": 120,
-    "offline": 5,
+    "afk": 10000,
+    "offline": 10000,
     "warning": 60
   },
   "dark": true,
