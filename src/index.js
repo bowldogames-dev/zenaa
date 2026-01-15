@@ -2,7 +2,7 @@ const config = {
   "max-vms": "10",
   "start_url": "https://jrdn-vm-engine.pages.dev",
   "timeout": {
-    "main": 900,
+    "main": 10000,
     "afk": 120,
     "offline": 5,
     "warning": 60
