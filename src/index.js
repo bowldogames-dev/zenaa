@@ -115,9 +115,11 @@ export default {
 
         const newInstance = await createResponse.json();
         return new Response(JSON.stringify({
-          session_id: newInstance.session_id,
-          session_url: `/session/${newInstance.session_id}`
-        }), { headers: { ...corsHeaders, 'Content-Type': 'application/json' } });
+  url: newInstance.embed_url
+}), {
+  headers: { ...corsHeaders, "Content-Type": "application/json" }
+});
+
 
       } catch (e) {
         return new Response(JSON.stringify({
