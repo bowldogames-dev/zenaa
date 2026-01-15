@@ -82,7 +82,7 @@ export default {
         const vmConfig = {
           start_url: config.start_url,
           timeout: {
-            absolute: config.timeout?.main || 900,
+            absolute: config.timeout?.main || 10000,
             inactive: config.timeout?.afk || 120,
             offline: config.timeout?.offline || 5,
             warning: config.timeout?.warning || 60
